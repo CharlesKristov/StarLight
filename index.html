@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bintang Terang - Kusen Aluminium & Kaca</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- KONFIGURASI WARNA (Disesuaikan dengan Gambar) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0B6645',       // Hijau Gelap (Latar Hero, Teks Judul, Tombol)
+              primaryLight: '#E8F5E9',  // Hijau Sangat Muda (Background section Keunggulan)
+              iconBg: '#C6F6D5',        // Hijau Muda (Background Ikon)
+              darkText: '#111827',      // Hitam/Abu-abu gelap untuk teks utama
+              grayText: '#4B5563'       // Abu-abu untuk teks deskripsi
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- TRACKING: Google Analytics (GTAG) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+
+      function trackWAClick(buttonLocation) {
+          gtag('event', 'click_whatsapp', {
+              'event_category': 'Engagement',
+              'event_label': buttonLocation
+          });
+      }
+    </script>
+</head>
+<body class="font-sans antialiased text-grayText bg-white">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Ganti src dengan URL Logo Blob Storage -->
+                    <div class="bg-primary text-white font-bold rounded p-2 mr-2">BT</div>
+                    <span class="font-bold text-xl text-primary">Bintang Terang</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition">Beranda</a>
+                    <a href="#layanan" class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition">Layanan & Produk</a>
+                    <a href="#keunggulan" class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition">Keunggulan</a>
+                    <a href="#testimoni" class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition">Testimoni</a>
+                    <a href="#kontak" class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition">Kontak</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/6281234567890" target="_blank" onclick="trackWAClick('Navbar')" class="bg-primary hover:bg-green-800 text-white px-5 py-2 rounded-full text-sm font-medium flex items-center transition shadow-md">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-32 pb-20 bg-primary">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-white/10 text-white text-xs font-medium px-4 py-1.5 rounded-full mb-6 border border-white/20">
+                Solusi Renovasi & Pembangunan Rumah Terbaik
+            </span>
+            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl leading-tight mb-6">
+                Kusen Aluminium & Kaca <br>Berkualitas Unik untuk Hunian Impian Anda
+            </h1>
+            <p class="max-w-3xl text-lg text-white/90 mx-auto mb-10">
+                Melayani pembuatan dan penggantian kusen aluminium, pintu kaca, jendela, hingga etalase dengan pengerjaan presisi, rapi, dan tahan lama.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/6281234567890" target="_blank" onclick="trackWAClick('Hero_Konsultasi')" class="bg-white text-primary px-8 py-3 rounded-lg font-bold text-sm md:text-base transition shadow-lg hover:bg-gray-50">
+                    Konsultasi & Estimasi Biaya Gratis
+                </a>
+                <a href="#layanan" class="bg-transparent text-white border border-white px-8 py-3 rounded-lg font-bold text-sm md:text-base transition hover:bg-white/10">
+                    Lihat Catalog Produk
+                </a>
+            </div>
+            <div class="mt-8 flex justify-center">
+                <a href="https://wa.me/6281234567890" target="_blank" onclick="trackWAClick('Hero_WA_Number')" class="inline-flex items-center bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base transition hover:bg-green-500 shadow-md border border-white/20">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi 0812-3456-7890
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk & Layanan Utama -->
+    <section id="layanan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-primary">Produk & Layanan Utama</h2>
+                <p class="mt-3 text-grayText">Pilihan material terbaik untuk rumah, ruko, maupun kantor Anda</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Layanan 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-iconBg w-12 h-12 rounded-xl flex items-center justify-center text-primary text-xl mb-6">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-2">Kusen Aluminium</h3>
+                    <p class="text-sm text-grayText leading-relaxed">Anti rayap, tahan cuaca, dan tersedia berbagai pilihan warna modern untuk frame pintu/jendela.</p>
+                </div>
+                <!-- Layanan 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-iconBg w-12 h-12 rounded-xl flex items-center justify-center text-primary text-xl mb-6">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-2">Jendela Kaca</h3>
+                    <p class="text-sm text-grayText leading-relaxed">Model sliding, casement, atau mati. Kedap suara dan memaksimalkan pencahayaan alami.</p>
+                </div>
+                <!-- Layanan 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-iconBg w-12 h-12 rounded-xl flex items-center justify-center text-primary text-xl mb-6">
+                        <i class="fas fa-door-closed"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-2">Pintu Kaca</h3>
+                    <p class="text-sm text-grayText leading-relaxed">Pintu kaca tempered, lipat, dan geser untuk tampilan rumah atau toko yang elegan dan luas.</p>
+                </div>
+                <!-- Layanan 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-iconBg w-12 h-12 rounded-xl flex items-center justify-center text-primary text-xl mb-6">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-2">Etalase Kaca</h3>
+                    <p class="text-sm text-grayText leading-relaxed">Pembuatan etalase toko, konter, dan kabinet pajangan custom sesuai ukuran ruangan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hasil Pekerjaan Kami -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-primary mb-12">Hasil Pekerjaan Kami</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="URL_BLOB_STORAGE_PORTFOLIO_1" alt="Hasil Pekerjaan 1" class="w-full h-48 object-cover rounded-lg bg-gray-200">
+                <img src="URL_BLOB_STORAGE_PORTFOLIO_2" alt="Hasil Pekerjaan 2" class="w-full h-48 object-cover rounded-lg bg-gray-200">
+                <img src="URL_BLOB_STORAGE_PORTFOLIO_3" alt="Hasil Pekerjaan 3" class="w-full h-48 object-cover rounded-lg bg-gray-200">
+                <img src="URL_BLOB_STORAGE_PORTFOLIO_4" alt="Hasil Pekerjaan 4" class="w-full h-48 object-cover rounded-lg bg-gray-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section id="keunggulan" class="py-20 bg-primaryLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-primary">Mengapa Memilih Bintang Terang?</h2>
+                <p class="mt-3 text-grayText">Komitmen kami untuk memberikan hasil pemasangan terbaik</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-3">Pengerjaan Rapi & Presisi</h3>
+                    <p class="text-sm text-grayText">Dikerjakan oleh teknisi berpengalaman untuk memastikan sambungan presisi dan kedap air.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-3">Harga Bersaing</h3>
+                    <p class="text-sm text-grayText">Penawaran harga transparan sesuai spesifikasi material pilihan Anda tanpa biaya tersembunyi.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-darkText mb-3">Berpengalaman Lebih dari 20 tahun</h3>
+                    <p class="text-sm text-grayText">Berpengalaman sejak 2004, kami telah dipercaya melayani berbagai kebutuhan pembuatan aluminium dengan mengutamakan kualitas, ketelitian, dan kepuasan pelanggan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-primary mb-12">Testimoni</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="URL_BLOB_STORAGE_TESTI_1" alt="Testimoni 1" class="w-full h-auto rounded-lg shadow-sm bg-gray-200">
+                <img src="URL_BLOB_STORAGE_TESTI_2" alt="Testimoni 2" class="w-full h-auto rounded-lg shadow-sm bg-gray-200">
+                <img src="URL_BLOB_STORAGE_TESTI_3" alt="Testimoni 3" class="w-full h-auto rounded-lg shadow-sm bg-gray-200">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="bg-primary rounded-3xl p-10 md:p-16 shadow-xl relative overflow-hidden">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 relative z-10">Sedang Renovasi atau Ganti Pintu & Jendela?</h2>
+                <p class="text-white/90 mb-8 max-w-2xl mx-auto text-sm md:text-base relative z-10">Konsultasikan kebutuhan ukuran, material, dan estimasi anggaran proyek Anda dengan tim Bintang Terang sekarang.</p>
+                <a href="https://wa.me/6281234567890" target="_blank" onclick="trackWAClick('CTA_Bawah')" class="inline-flex items-center bg-white text-primary px-8 py-3 rounded-full font-bold text-base transition shadow-lg hover:bg-gray-100 relative z-10">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Hubungi WhatsApp Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Kontak -->
+    <footer id="kontak" class="bg-[#E6F0FA] py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8">
+                <h3 class="text-lg font-bold text-darkText mb-6">Atau temui kami di :</h3>
+                <div class="flex flex-col space-y-6">
+                    <!-- Google Maps -->
+                    <div class="flex items-center">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/484/507/small_2x/google-maps-gmaps-icon-logo-symbol-free-png.png" alt="Google Maps" class="w-10 h-10 mr-4 object-contain">
+                        <a href="https://maps.app.goo.gl/MgvKQrepKYRBHJA" target="_blank" class="text-darkText hover:text-primary transition font-medium text-lg">
+                            Binter Alumunium Toko kaca
+                        </a>
+                    </div>
+                    <!-- Shopee -->
+                    <div class="flex items-center">
+                        <img src="https://freepnglogo.com/images/all_img/1727674497_shopee-logo-transparent.png" alt="Shopee" class="w-10 h-10 mr-4 object-contain">
+                        <a href="https://s.shopee.co.id/40gJt1N6qR" target="_blank" class="text-darkText hover:text-primary transition font-medium text-lg">
+                            Bintang_terang.
+                        </a>
+                    </div>
+                    <!-- Tokopedia -->
+                    <div class="flex items-center">
+                        <img src="https://freelogopng.com/images/all_img/1691990957tokopedia-icon-png.png" alt="Tokopedia" class="w-10 h-10 mr-4 object-contain">
+                        <a href="https://tk.tokopedia.com/ZSq2shrwo/" target="_blank" class="text-darkText hover:text-primary transition font-medium text-lg">
+                            Bintang Terang Aluminium
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 border-t border-gray-300">
+            <div class="mt-8 flex justify-center">
+                <a href="https://wa.me/6281234567890" target="_blank" onclick="trackWAClick('Hero_WA_Number')" class="inline-flex items-center bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base transition hover:bg-green-500 shadow-md border border-white/20">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi 0812-3456-7890
+                </a>
+            </div>                
+            <p class="text-xs text-gray-500 mt-2">&copy; 2026 Bintang Terang Aluminium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
