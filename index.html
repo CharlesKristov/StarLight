@@ -72,32 +72,39 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="beranda" class="pt-32 pb-20 bg-primary">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="inline-block bg-white/10 text-white text-xs font-medium px-4 py-1.5 rounded-full mb-6 border border-white/20">
-                Solusi Renovasi & Pembangunan Rumah Terbaik
-            </span>
-            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl leading-tight mb-6">
-                Kusen Aluminium & Kaca <br>Berkualitas Unik untuk Hunian Impian Anda
-            </h1>
-            <p class="max-w-3xl text-lg text-white/90 mx-auto mb-10">
-                Melayani pembuatan dan penggantian kusen aluminium, pintu kaca, jendela, hingga etalase dengan pengerjaan presisi, rapi, dan tahan lama.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://api.whatsapp.com/send/?phone=6285967003931&text=Halo+Bintang+Terang%2C+saya+mau+konsultasi+pembuatan+kusen+aluminium.&type=phone_number&app_absent=0" target="_blank" onclick="trackWAClick('Hero_Konsultasi')" class="bg-white text-primary px-8 py-3 rounded-lg font-bold text-sm md:text-base transition shadow-lg hover:bg-gray-50">
-                    Konsultasi & Estimasi Biaya Gratis
-                </a>
-                <a href="#layanan" class="bg-transparent text-white border border-white px-8 py-3 rounded-lg font-bold text-sm md:text-base transition hover:bg-white/10">
-                    Lihat Catalog Produk
-                </a>
-            </div>
-            <div class="mt-8 flex justify-center">
-                <a href="https://api.whatsapp.com/send/?phone=6285967003931&text=Halo+Bintang+Terang%2C+saya+mau+konsultasi+pembuatan+kusen+aluminium.&type=phone_number&app_absent=0" target="_blank" onclick="trackWAClick('Hero_WA_Number')" class="inline-flex items-center bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base transition hover:bg-green-500 shadow-md border border-white/20">
-                    <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi 0812-3456-7890
-                </a>
-            </div>
+<section id="beranda" class="relative pt-32 pb-20 bg-cover bg-center bg-no-repeat" style="background-image: url('https://hgvjksvpelk4t9bo.public.blob.vercel-storage.com/StarLight/kusen.jfif');">
+    
+    <!-- Layer overlay warna hijau (primary) dengan opacity 25% -->
+    <div class="absolute inset-0 bg-primary opacity-75"></div>
+
+    <!-- Konten Hero (Ditambahkan relative dan z-10 agar berada di atas layer gambar) -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block bg-white/20 text-white text-xs font-medium px-4 py-1.5 rounded-full mb-6 border border-white/30 backdrop-blur-sm shadow-sm">
+            Solusi Renovasi & Pembangunan Rumah Terbaik
+        </span>
+        <!-- Tambahan drop-shadow-lg agar teks putih tetap terbaca jelas di atas gambar -->
+        <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl leading-tight mb-6 drop-shadow-lg">
+            Kusen Aluminium & Kaca <br>Berkualitas Unik untuk Hunian Impian Anda
+        </h1>
+        <p class="max-w-3xl text-lg text-white mx-auto mb-10 drop-shadow-md font-medium">
+            Melayani pembuatan dan penggantian kusen aluminium, pintu kaca, jendela, hingga etalase dengan pengerjaan presisi, rapi, dan tahan lama.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://api.whatsapp.com/send/?phone=6285967003931&text=Halo+Bintang+Terang%2C+saya+mau+konsultasi+pembuatan+kusen+aluminium.&type=phone_number&app_absent=0" target="_blank" onclick="trackWAClick('Hero_Konsultasi')" class="bg-white text-primary px-8 py-3 rounded-lg font-bold text-sm md:text-base transition shadow-lg hover:bg-gray-50">
+                Konsultasi & Estimasi Biaya Gratis
+            </a>
+            <!-- Ubah sedikit background button kedua agar kontras dengan gambar -->
+            <a href="#layanan" class="bg-black/30 text-white border border-white/50 px-8 py-3 rounded-lg font-bold text-sm md:text-base transition hover:bg-black/50 backdrop-blur-sm">
+                Lihat Catalog Produk
+            </a>
         </div>
-    </section>
+        <div class="mt-8 flex justify-center">
+            <a href="https://api.whatsapp.com/send/?phone=6285967003931&text=Halo+Bintang+Terang%2C+saya+mau+konsultasi+pembuatan+kusen+aluminium.&type=phone_number&app_absent=0" target="_blank" onclick="trackWAClick('Hero_WA_Number')" class="inline-flex items-center bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base transition hover:bg-green-500 shadow-md border border-white/20">
+                <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi 0859-6700-3931
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- Produk & Layanan Utama -->
     <section id="layanan" class="py-20 bg-white">
@@ -266,7 +273,7 @@
             <div class="text-center pt-8 border-t border-gray-300">
             <div class="mt-8 flex justify-center">
                 <a href="https://api.whatsapp.com/send/?phone=6285967003931&text=Halo+Bintang+Terang%2C+saya+mau+konsultasi+pembuatan+kusen+aluminium.&type=phone_number&app_absent=0" target="_blank" onclick="trackWAClick('Hero_WA_Number')" class="inline-flex items-center bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base transition hover:bg-green-500 shadow-md border border-white/20">
-                    <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi 0812-3456-7890
+                    <i class="fab fa-whatsapp text-xl mr-2"></i> Hubungi 0859-6700-3931
                 </a>
             </div>                
             <p class="text-xs text-gray-500 mt-2">&copy; 2026 Bintang Terang Aluminium. All rights reserved.</p>
